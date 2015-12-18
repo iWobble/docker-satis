@@ -2,7 +2,7 @@ FROM iwobble/php5
 
 MAINTAINER Jared Mashburn "jmashburn@iwobble.com"
 
-RUN dnf -y install git-core
+RUN dnf -y install git-core && dnf clean all
 
 RUN \
     composer self-update && \
